@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-[#F5F5F5] text-[#333333];
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-pill bg-selma-purple px-6 py-3 text-sm font-medium text-white shadow-sm transition hover:bg-selma-light;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-pill border border-selma-purple bg-white px-6 py-3 text-sm font-medium text-selma-purple shadow-sm transition hover:bg-selma-light hover:text-white;
+}
+
+.btn-emergency {
+  @apply inline-flex items-center justify-center rounded-pill bg-error px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-red-600;
+}
+

@@ -1,0 +1,21 @@
+{
+  "common": {
+    "clinicName": "Clinique Dentaire Selma",
+    "tagline": "Votre sourire, notre priorité",
+    "bookAppointment": "Prendre rendez-vous",
+    "dentalEmergencies": "Urgences dentaires"
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "booking": "Rendez-vous",
+    "contact": "Contact",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Votre sourire, notre priorité",
+    "subtitle": "Soins dentaires modernes à Cheraga : soins généraux, esthétique dentaire, chirurgie orale et urgences 24/7."
+  }
+}
+
