@@ -1,14 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    appDir: true
-  },
-  i18n: {
-    locales: ['fr', 'ar'],
-    defaultLocale: 'fr',
-    localeDetection: true
-  }
+  reactStrictMode: true
 };
 
 export default nextConfig;
