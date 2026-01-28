@@ -16,12 +16,12 @@ export const appointmentSchema = z.object({
   isNewPatient: z.boolean(),
   reason: z.string().min(5, "Merci de préciser le motif"),
   medicalHistory: z.array(z.string()).optional(),
-  acceptTerms: z.literal(true, {
-    errorMap: () => ({ message: "Vous devez accepter les conditions" }),
-  }),
-  acceptPrivacy: z.literal(true, {
-    errorMap: () => ({ message: "Vous devez accepter la politique RGPD" }),
-  }),
+  acceptTerms: z
+    .boolean()
+    .refine((v) => v === true, "Vous devez accepter les conditions"),
+  acceptPrivacy: z
+    .boolean()
+    .refine((v) => v === true, "Vous devez accepter la politique RGPD"),
 });
 
 export type AppointmentInput = z.infer<typeof appointmentSchema>;
