@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -14,6 +15,7 @@ export default async function LocaleLayout({
   params: { locale: AppLocale };
 }) {
   const locale = params?.locale ?? DEFAULT_LOCALE;
+  if (locale !== "fr" && locale !== "ar") notFound();
   const messages = await getMessages(locale);
 
   return (
